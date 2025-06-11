@@ -60,6 +60,7 @@ static void	main_process(t_env *envlist)
 	cmd_free(&cmd);
 }
 
+/* Detecta si el programa se ejecuta desde una terminal interactiva o desde un pipe/script */ 
 void	minishell(t_env *envlist)
 {
 	if (isatty(STDIN_FILENO))
