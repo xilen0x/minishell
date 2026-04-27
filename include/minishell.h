@@ -319,7 +319,7 @@ int		check_syntax(char *cmd);
 
 /*-----------------------oldpwd---------------------*/
 int		var_exists_oldpwd(t_env *env, char *variable);
-char	*update_pwd(t_env *env);
+void	update_pwd(t_env *env);
 int		set_old_pwd(void);
 int		get_old_pwd(char *current_wd, t_env *env);
 int		go_path(t_cmd *cmd);
